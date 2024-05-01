@@ -1,0 +1,115 @@
+/* Footer.css */
+.logo{
+  background-color: rgb(235, 240, 239);
+  
+    margin: 0.5rem !important;
+    border-radius: 20px;
+  } 
+  #in:hover{
+    background-color: blue;
+   
+    filter: drop-shadow(0 0 30px var(blue));
+    
+
+  }
+  #insta:hover{
+    background:linear-gradient(45deg,rgb(255, 0, 0),rgb(180, 8, 172),rgb(225, 98, 7));
+    border: 6px solid var(rgb(224, 224, 234));
+    filter: drop-shadow(0 0 30px var(rgb(255, 0, 89)));
+    
+
+  }
+  #snap:hover{
+    background:yellow;
+    border: 6px solid var(rgb(224, 224, 234));
+    filter: drop-shadow(0 0 30px var(rgb(255, 0, 89)));
+    
+
+  }
+
+  .flex-container {
+    background-color: black;
+    border-top: 1px solid gray;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+.phone,
+.mail-head,
+.social,
+.final {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.phone a,
+.mail-head a,
+.social a {
+  
+    color: white;
+    text-decoration: none;
+}
+/* Mobile styles (up to 767px) */
+@media screen and (max-width: 767px) {
+
+.div-name{
+  margin-left: -0.3rem;
+}
+
+  .li{
+      display: none !important;
+  }
+
+  .main {
+    left: 0;
+    top: -3rem;
+  }
+
+  .aside {
+    left: 0;
+    margin-left: 1rem;
+  }
+
+  
+  .hello {
+    font-size: 4rem;
+  }
+
+  .about {
+    width: 100%;
+    font-size: larger;
+  }
+
+  .bm {
+    width: 175px;
+    height: 100px;
+    top: -1rem;
+    left: 0;
+  }
+  .flex-container {
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+  .phone,
+  .mail-head,
+  .social,
+  .final {
+      width: 100%;
+  }
+
+  .final {
+      margin-top: 1rem;
+  }
+
+  .copy {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+
+}

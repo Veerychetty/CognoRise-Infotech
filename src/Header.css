@@ -1,0 +1,126 @@
+/* Header.css */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+
+.header {
+  background-color: black;
+  size: 100px;
+   
+  
+  
+  
+  
+}
+.header h1{
+  display: flex;
+  background-color: black;
+  background: linear-gradient(45deg,#fffd44,#e75f04,#1e04e7,#17e704);
+  filter: drop-shadow(0 0 10px #e75f04 );
+  border-radius: 10px;
+  margin: 0px;
+  color: white;
+  justify-content: center;
+  
+
+}
+.header h3{
+  display: flex;
+  background-color: black;
+  background: linear-gradient(45deg,#fffd44,#e75f04,#1e04e7,#17e704);
+  filter: drop-shadow(0 0 10px #e75f04 );
+  border-radius: 10px;
+  margin: 0px;
+  color: white;
+  justify-content: center;
+  
+
+}
+#hh{
+  background-color: black;
+}
+.header nav #hh span{
+  
+  color: mediumvioletred;
+  filter: drop-shadow(0 0 5px  mediumvioletred);
+}
+
+
+nav{
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 0px;
+  justify-content: space-between;
+
+  
+  
+
+}
+ 
+
+
+
+
+ nav ul{
+  display: flex;
+  
+  gap: 10px;
+  margin-left: 65%;
+  flex-wrap: wrap;
+  
+  
+
+}
+
+ nav ul li{
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+  transition: 200ms ease-in-out;
+  color: white;
+  }
+
+ nav ul li a {
+text-decoration: none;
+
+}
+
+nav  ul .hh:nth-child(1):hover{
+  background-color: var(--clr);
+  color: white;
+  border: 2px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr))
+  }
+nav  ul .hh:nth-child(2):hover{
+    background-color: var(--clr);
+    color: white;
+    border: 3px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr))
+    }
+nav  ul li:nth-child(3):hover{
+      background-color: var(--clr);
+      color: white;
+      border: 3px solid var(--clr);
+      filter: drop-shadow(0 0 20px var(--clr))
+      }
+      nav  ul li:nth-child(4):hover{
+        background-color: var(--clr);
+        color: white;
+        border: 3px solid var(--clr);
+        filter: drop-shadow(0 0 20px var(--clr))
+        }
+
+nav ul li a{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-decoration: none;
+}
+
