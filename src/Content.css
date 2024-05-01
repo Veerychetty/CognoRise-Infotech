@@ -1,164 +1,130 @@
-/* Content.css */
-.content {
-  display: flex;
-  justify-content: space-evenly;
-  
-  align-items: center;
-  
-    background-color: #1a1a1a;
-    color: #ffffff;
-    
-    
-    
-}
-
-  
- 
-.content.Writings p{
-  
-  font-size: 35px;
-  font-weight: 600;
-}
-.about {
-  margin-left: 10PX;
-  font-family: 'Noto Sans Thai', sans-serif;
-  font-weight:600;
-  width: 400px;
-  transition: 2s;
-}
-
-
-
-
-/* Add more styles for your project cards, skills, etc. */
-.ring {
-    position: relative;
-    width: 500px;
-    height: 500px;
+.backcontainer{
     display: flex;
     justify-content: center;
+    background-color: transparent;
+}
+
+
+.maincontainer{
+    display: grid;
+    background-color: rgb(12, 12, 12);
+    scale: 1.2;
     align-items: center;
-    flex-wrap: wrap;
-    scale: 0.8;
-  }
-  .ring i {
-    position: absolute;
-    inset: 0;
-    border: 2px solid #fff;
-    transition: 0.5s;
-  }
-  .ring i:nth-child(1) {
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: animate 6s linear infinite;
-  }
-  .ring i:nth-child(2) {
-    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate 4s linear infinite;
-  }
-  .ring i:nth-child(3) {
-    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate2 10s linear infinite;
-  }
-  .ring i:nth-child(4) {
-    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate2 8s linear infinite;
-  }
-  .ring:hover i {
-    border: 6px solid var(--clr);
-    filter: drop-shadow(0 0 20px var(--clr));
-  }
-  @keyframes animate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes animate2 {
-    0% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }}
-    .box{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      
-      width: 450px;
-      height: 450px;
-      align-items: center;
-      
-      background-image:linear-gradient(to bottom right ,red,purple) ;
-      filter: drop-shadow(0 0 20px #e75f04 );
-      
-      
-      border-radius: 50%;
-      filter: drop-shadow((0 0 10px var("blue")))
-      
-
-
-
-    }
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100%;
     
-
-
-
-
+    transition: 1s;
+    animation: border1 10s alternate-reverse infinite;
     
     
-  .box img{
-    position: relative;
+    
+    cursor: pointer;
+}
+@keyframes border1 {
+    0%{
+        filter: drop-shadow(-3px -3px 5px greenyellow);
+        
+
+    }
+    50%{
+        filter: drop-shadow(2px 2px 5px greenyellow);
+    }
+    100%{
+        filter: drop-shadow(3px 3px 10px greenyellow);
+        
+    }
+    
+}
+.row1{
     display: flex;
-    color: var(--primary);
+    flex-wrap: wrap;
 
-
+    flex-direction: row;
+    grid-row: 2;
     
-    width: 400px;
-    height: 400px;
+    justify-content: space-around;
+
+}
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    
+    
+    justify-content: space-around;
+
+}
+.row3{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    
+    
+    justify-content: space-around;
+
+}
+.row4{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    
+    
+    justify-content: space-around;
+
+}
+.row5{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    
+    
+    justify-content: space-around;
+
+}
+button{
+    text-align: center;
+    background-color: #39ff14;
+    -webkit-background-clip: text;
+    color: greenyellow;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-color:  #39ff14;
+    margin: 2px;
     border-radius: 50%;
-    transition: 5s;
+}
+button:hover{
+    color: #000;
     
-
+    background: #39ff14;
     
+}
 
-  }
-  img:hover{
-    animation: pulse 2s infinite;
+input{
+    color: #39ff14;
+    background-color: rgb(31, 27, 27);
+    padding: 5px;
+    border-radius: 11px;
+    border-color: greenyellow;
     
-
-
-  }
-  @keyframes pulse {
-    0%,100%{transform: scale(1);}
-    50%{transform: scale(1.1);}
+    margin-bottom: 10px;
+}
+input:focus{
+    color: #39ff14;
+    outline: none;
+}
+canvas {
+    display: block;
     
-  }
-
-  @media screen and (max-width: 767px) {
-    .box{
-      flex-direction: row;
-    }
-    .content.Writings p{
-
-      font-size: 35px;
-      font-weight: 600;
-      
-    }
-    @keyframes pulse {
-      0%,100%{transform: scale(1);}
-      50%{transform: scale(1.1);}
-      
-    }
-    .about {
-      margin-left: 10PX;
-      font-family: 'Noto Sans Thai', sans-serif;
-      font-weight:600;
-      width: 400px;
-      animation:  2s infinite;
-    }
-
-  }
-  
+    height: 100vh;
+    width: 100vw;
+     position: absolute;
+    
+    z-index: -10;}

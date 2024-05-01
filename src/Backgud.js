@@ -1,8 +1,7 @@
-
 import React, { useEffect } from 'react';
-import "./Header.css"
+import './Back.css';
 
-const Header = () => {
+const Back = () => {
   useEffect(() => {
     // Initialize the canvas
     const canvas = document.querySelector('canvas');
@@ -40,12 +39,17 @@ const Header = () => {
     // Loop the animation
     setInterval(draw, 99);
   }, []);
+
   return (
     <div>
-      <canvas></canvas>
-        <header className='hcon'><h1>Calculator</h1></header>
+      <body>
+        <canvas></canvas>
+        <div className="form">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo obcaecati eligendi consectetur corporis dolor eius minima.
+        </div>
+      </body>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Back;
